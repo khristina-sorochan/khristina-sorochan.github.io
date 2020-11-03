@@ -1,25 +1,62 @@
 <header>
-  <nav>
-    <span>name</span>
-    <ul>
-      <li routerLink="/">Home</li>
-      <li routerLink="/services">Services</li>
-      <li routerLink="/skills">Skills</li>
-      <li routerLink="/portfolio">Portfolio</li>
-    </ul>
-  </nav>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar-start">
+        <span class="name">name</span>
+        <div class="navbar">
+          <a routerLink="/">Home</a>
+          <a routerLink="/services">Services</a>
+          <a routerLink="/skills">Skills</a>
+          <a routerLink="/portfolio">Portfolio</a>
+        </div>
+      </nav>
+      <a class="btn btn-download" href="/assets/pdf/test-done.jpg" download>DOWNLOAD CV</a>
+    </div>
+    <div class="home">
+      <div class="home-left">
+        <p>Hello, I am</p>
+        <h1>Kristina Sorochan</h1>
+        <p>Designer and Coder</p>
+      </div>
+      <div class="home-right">
+        <img width="100%" src="../assets/img/develop.png" alt="img">
+      </div>
+    </div>
+  </div>
 </header>
 <main>
-  <router-outlet></router-outlet>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
 </main>
 <footer>
-  <nav>
-    <span>name</span>
-    <ul>
-      <li routerLink="/">Home</li>
-      <li routerLink="/services">Services</li>
-      <li routerLink="/skills">Skills</li>
-      <li routerLink="/portfolio">Portfolio</li>
-    </ul>
-  </nav>
+  <div class="container">
+    <div class="row">
+      <span class="name">name</span>
+      <div class="navbar">
+        <a routerLink="/">Home</a>
+        <a routerLink="/services">Services</a>
+        <a routerLink="/skills">Skills</a>
+        <a routerLink="/portfolio">Portfolio</a>
+      </div>
+      <div class="social-media">
+        <a href="#" target="_blank">
+          <img src="/assets/img/LinkedIn.svg" alt="Linkedin">
+        </a>
+        <a href="#" target="_blank">
+          <img src="/assets/img/Github.svg" alt="Github">
+        </a>
+        <a href="#" target="_blank">
+          <img src="/assets/img/Behance.svg" alt="Behance">
+        </a>
+        <a href="#" target="_blank">
+          <img src="/assets/img/Facebook.svg" alt="Facebook">
+        </a>
+        <a href="#" target="_blank">
+          <img src="/assets/img/Instagram.svg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+    <p class="copyright">Copyright © Kristina Sorochan 2020</p>
+  </div>
 </footer>
