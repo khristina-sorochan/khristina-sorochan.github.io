@@ -1,6 +1,14 @@
-<div class="block-one">
-  <h4>SERVICES</h4>
-  <h2>I can take your business to the next level</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Vulputate dignissim suspendisse in est ante. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Feugiat scelerisque varius morbi enim nunc. Sapien pellentesque habitant morbi tristique senectus. Massa massa ultricies mi quis hendrerit dolor magna.</p>
+<div class="block-main">
+  <div class="block-one">
+    <h4>Services</h4>
+    <h2>I can take your business to the next level</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="block-two">
+    <div class="item" *ngFor="let service of services">
+      <img src="{{ service.iconUrl }}" alt="icon">
+      <h5>{{ service.title }}</h5>
+      <span>{{ service.description }}</span>
+    </div>
+  </div>
 </div>
-<div class="block-two"></div>
