@@ -1,6 +1,10 @@
-<div class="block-one">
+<div class="block-main">
   <h4>SKILLS</h4>
-  <h2>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Vulputate dignissim suspendisse in est ante. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Feugiat scelerisque varius morbi enim nunc. Sapien pellentesque habitant morbi tristique senectus. Massa massa ultricies mi quis hendrerit dolor magna.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <div class="block-one">
+    <div class="item" *ngFor="let skill of skills">
+      <span>{{ skill.name }}</span><br>
+      <progress max="100" value="{{ skill.value }}"></progress>
+    </div>
+  </div>
 </div>
-<div class="block-two"></div>
