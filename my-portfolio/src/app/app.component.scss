@@ -45,6 +45,7 @@ footer {
         text-decoration: none;
         cursor: pointer;
         font-size: 0.9em;
+        &:hover { border-bottom: 1px solid white }
       }
     }
   }
