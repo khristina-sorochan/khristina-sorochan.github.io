@@ -16,14 +16,18 @@ h4 {
   color: #FF7C6E;
 }
 
-li {
-  list-style-type: none;
+input[type="radio"] {
+  display: none;
 }
 
-button {
-  border: none;
-  outline: none;
-  background-color: white;
+label {
+  width: 19%;
+  float: left;
+  text-align: center;
+  padding: 0.5%;
+  margin: 0.5%;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
 h5 {
@@ -39,15 +43,70 @@ img {
 .block-main {
   text-align: center;
   .filters {
-    width: 45%;
-    margin: 0 auto 20px;
-    display: flex;
-    justify-content: space-between;
+    height: 600px;
   }
-  .works {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-  }
+}
+
+input[type="radio"][id="web-development"]:checked + label,
+input[type="radio"][id="web-design"]:checked + label,
+input[type="radio"][id="title-1"]:checked + label,
+input[type="radio"][id="title-2"]:checked + label {
+  //border-bottom: 1px solid #FF7C6E;
+  color: #FF7C6E;
+}
+input[type="radio"][id="web-development"]:checked ~ .web-design,
+input[type="radio"][id="web-development"]:checked ~ .title-1,
+input[type="radio"][id="web-development"]:checked ~ .title-2 {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+input[type="radio"][id="web-design"]:checked ~ .web-development,
+input[type="radio"][id="web-design"]:checked ~ .title-1,
+input[type="radio"][id="web-design"]:checked ~ .title-2 {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+input[type="radio"][id="title-1"]:checked ~ .web-development,
+input[type="radio"][id="title-1"]:checked ~ .web-design,
+input[type="radio"][id="title-1"]:checked ~ .title-2 {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+input[type="radio"][id="title-2"]:checked ~ .web-development,
+input[type="radio"][id="title-2"]:checked ~ .web-design,
+input[type="radio"][id="title-2"]:checked ~ .title-1 {
+  width:0;
+  height:0;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+.tile {
+  width: 23%;
+  height: 250px;
+  float: left;
+  transition: all 1s;
+  margin: 0.9%;
+  padding: 0.5%;
+}
+.web-development {
+  background: #6666ff;
+}
+.web-design {
+  background: #ff4466;
+}
+.title-1 {
+  background: #66dd99;
+}
+.title-2 {
+  background: #FF7C6E;
 }
