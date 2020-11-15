@@ -45,7 +45,12 @@ footer {
         text-decoration: none;
         cursor: pointer;
         font-size: 0.9em;
-        &:hover { border-bottom: 1px solid white }
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 1px;
+        transition: background-size .3s;
+        &:hover, &:focus { background-size: 100% 1px; }
       }
     }
   }
@@ -100,3 +105,67 @@ footer {
     margin-top: 50px;
   }
 }
+
+
+@media only screen and (min-width: 1024px) {
+  .mobile-menu { display: none }
+  .home {
+    .btn-download { display: none }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .container { padding: 3% }
+  .mobile-menu { display: none }
+  .home {
+    .btn-download { display: none }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .container { padding: 3% }
+  header {
+    height: 100vh;
+    .row {
+      align-items: center;
+      .navbar { display: none }
+      .btn-download { display: none }
+    }
+  }
+  h1 { font-size: 2.5em }
+  .home {
+    flex-direction: column;
+    align-content: space-around;
+    height: 75vh;
+    .home-left {
+      width: 100%;
+      margin-top: 50px;
+      text-align: center;
+      p, h1 {text-align: center}
+    }
+    .btn-download {
+      font-family: 'Nexa XBold', sans-serif;
+      font-size: 0.75em;
+      color: #FF7C6E;
+      background-color: white;
+      margin-top: 20px;
+    }
+    .home-right {width: 100%}
+  }
+  footer {
+    .row {
+      flex-wrap: wrap;
+      .name {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .navbar {display: none}
+      .social-media {
+        padding-left: 20px;
+        width: 330px;
+        img {width: 72%}
+      }
+    }
+  }
+}
+
