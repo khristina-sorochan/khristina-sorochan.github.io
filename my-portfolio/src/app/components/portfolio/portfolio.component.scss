@@ -36,15 +36,40 @@ h5 {
   &:hover { color: #FF7C6E }
 }
 
-img {
-  width: 250px;
-}
-
 .block-main {
   text-align: center;
-  .filters {
-    height: 600px;
+}
+
+.tile {
+  width: 23%;
+  float: left;
+  margin: 0.9%;
+  padding: 0.5%;
+  transition: all 1s;
+  .one {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      img { width: 105% }
+    }
   }
+}
+
+.web-development {
+  background: #6666ff;
+}
+.web-design {
+  background: #ff4466;
+}
+.title-1 {
+  background: #66dd99;
+}
+.title-2 {
+  background: #FF7C6E;
 }
 
 input[type="radio"][id="web-development"]:checked + label,
@@ -89,24 +114,4 @@ input[type="radio"][id="title-2"]:checked ~ .title-1 {
   padding:0;
   margin:0;
   opacity:0;
-}
-.tile {
-  width: 23%;
-  height: 250px;
-  float: left;
-  transition: all 1s;
-  margin: 0.9%;
-  padding: 0.5%;
-}
-.web-development {
-  background: #6666ff;
-}
-.web-design {
-  background: #ff4466;
-}
-.title-1 {
-  background: #66dd99;
-}
-.title-2 {
-  background: #FF7C6E;
 }
