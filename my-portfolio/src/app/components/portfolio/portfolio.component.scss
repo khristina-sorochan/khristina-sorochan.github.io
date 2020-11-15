@@ -120,6 +120,7 @@ input[type="radio"][id="title-2"]:checked ~ .title-1 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h5 { font-size: 0.9em }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
