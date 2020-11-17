@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-portfolio';
+
+  constructor() { }
+
+  openNav(): void {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
+
+  closeNav(): void {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
 }

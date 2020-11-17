@@ -4,14 +4,21 @@
       <nav class="navbar-start">
         <span class="name">kristallred</span>
         <div class="navbar">
-          <a>Home</a>
+          <a routerLink="/">Home</a>
           <a routerLink="/services">Services</a>
           <a routerLink="/skills">Skills</a>
           <a routerLink="/portfolio">Portfolio</a>
         </div>
       </nav>
       <a class="btn btn-download" href="/assets/pdf/test-done.jpg" download>Download CV</a>
-      <div class="mobile-menu">Menu</div>
+      <div class="mobile-menu" (click)="openNav()">Menu</div>
+      <div id="mySidenav" class="sidenav">
+        <a class="closeBtn" (click)="closeNav()">&times;</a>
+        <a routerLink="/" (click)="closeNav()">Home</a>
+        <a routerLink="/services" (click)="closeNav()">Services</a>
+        <a routerLink="/skills" (click)="closeNav()">Skills</a>
+        <a routerLink="/portfolio" (click)="closeNav()">Portfolio</a>
+      </div>
     </div>
     <div class="home">
       <div class="home-left">
