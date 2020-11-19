@@ -45,4 +45,13 @@ export class AppComponent {
     document.getElementById("mySidenav").style.width = "0";
   }
 
+  scrollToContent(): void {
+    const content = document.getElementById('content');
+    content.scrollIntoView();
+  }
+
+  scrollToTop(): void {
+    window.scroll(0, 0);
+  }
+
 }

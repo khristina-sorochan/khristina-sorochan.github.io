@@ -4,20 +4,20 @@
       <nav class="navbar-start">
         <span class="name">kristallred</span>
         <div class="navbar">
-          <a routerLink="/">Home</a>
-          <a routerLink="/services">Services</a>
-          <a routerLink="/skills">Skills</a>
-          <a routerLink="/portfolio">Portfolio</a>
+          <a routerLink="/" (click)="scrollToContent()">Home</a>
+          <a routerLink="/services" (click)="scrollToContent()">Services</a>
+          <a routerLink="/skills" (click)="scrollToContent()">Skills</a>
+          <a routerLink="/portfolio" (click)="scrollToContent()">Portfolio</a>
         </div>
       </nav>
       <a class="btn btn-download" href="/assets/pdf/test-done.jpg" download>Download CV</a>
       <div class="mobile-menu" (click)="openNav()">Menu</div>
       <div id="mySidenav" class="sidenav">
         <a class="closeBtn" (click)="closeNav()">&times;</a>
-        <a routerLink="/" (click)="closeNav()">Home</a>
-        <a routerLink="/services" (click)="closeNav()">Services</a>
-        <a routerLink="/skills" (click)="closeNav()">Skills</a>
-        <a routerLink="/portfolio" (click)="closeNav()">Portfolio</a>
+        <a routerLink="/" (click)="closeNav(); scrollToContent()">Home</a>
+        <a routerLink="/services" (click)="closeNav(); scrollToContent()">Services</a>
+        <a routerLink="/skills" (click)="closeNav(); scrollToContent()">Skills</a>
+        <a routerLink="/portfolio" (click)="closeNav(); scrollToContent()">Portfolio</a>
       </div>
     </div>
     <div class="home">
@@ -34,7 +34,7 @@
   </div>
 </header>
 <main>
-  <div class="container">
+  <div class="container" id="content">
     <router-outlet></router-outlet>
   </div>
 <!--  <div class="container">-->
