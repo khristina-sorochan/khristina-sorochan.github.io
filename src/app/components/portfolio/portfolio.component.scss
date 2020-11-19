@@ -79,36 +79,36 @@ input[type="radio"][id="title-2"]:checked + label {
   //border-bottom: 1px solid #FF7C6E;
   color: #FF7C6E;
 }
-input[type="radio"][id="web-development"]:checked ~ .web-design,
-input[type="radio"][id="web-development"]:checked ~ .title-1,
-input[type="radio"][id="web-development"]:checked ~ .title-2 {
+input[type="radio"][id="web-development"]:checked ~ .box .web-design,
+input[type="radio"][id="web-development"]:checked ~ .box .title-1,
+input[type="radio"][id="web-development"]:checked ~ .box .title-2 {
   width:0;
   height:0;
   padding:0;
   margin:0;
   opacity:0;
 }
-input[type="radio"][id="web-design"]:checked ~ .web-development,
-input[type="radio"][id="web-design"]:checked ~ .title-1,
-input[type="radio"][id="web-design"]:checked ~ .title-2 {
+input[type="radio"][id="web-design"]:checked ~ .box .web-development,
+input[type="radio"][id="web-design"]:checked ~ .box .title-1,
+input[type="radio"][id="web-design"]:checked ~ .box .title-2 {
   width:0;
   height:0;
   padding:0;
   margin:0;
   opacity:0;
 }
-input[type="radio"][id="title-1"]:checked ~ .web-development,
-input[type="radio"][id="title-1"]:checked ~ .web-design,
-input[type="radio"][id="title-1"]:checked ~ .title-2 {
+input[type="radio"][id="title-1"]:checked ~ .box .web-development,
+input[type="radio"][id="title-1"]:checked ~ .box .web-design,
+input[type="radio"][id="title-1"]:checked ~ .box .title-2 {
   width:0;
   height:0;
   padding:0;
   margin:0;
   opacity:0;
 }
-input[type="radio"][id="title-2"]:checked ~ .web-development,
-input[type="radio"][id="title-2"]:checked ~ .web-design,
-input[type="radio"][id="title-2"]:checked ~ .title-1 {
+input[type="radio"][id="title-2"]:checked ~ .box .web-development,
+input[type="radio"][id="title-2"]:checked ~ .box .web-design,
+input[type="radio"][id="title-2"]:checked ~ .box .title-1 {
   width:0;
   height:0;
   padding:0;

@@ -22,75 +22,14 @@
     <label for="title-2">
       <h5>Title</h5>
     </label>
-    <div class="tile web-development">
-      <div class="one">
-        <div>
-          <a href="#" target="/_blank">
-            <img src="assets/img/project-webdevelopment.jpg" alt="img">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="tile web-design">
-      <div class="one">
-        <div>
-          <a href="#" target="/_blank">
-            <img src="assets/img/project-webdesign.jpg" alt="img">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="tile web-development">
-      <div class="one">
-        <div>
-          <a href="#" target="/_blank">
-            <img src="assets/img/project-webdevelopment.jpg" alt="img">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="tile title-1">
-      <div class="one">
-        <div>
-          <a href="#" target="/_blank">
-            <img src="assets/img/project-title1.jpg" alt="img">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="tile title-2">
-      <div class="one">
-        <div>
-          <a href="#" target="/_blank">
-            <img src="assets/img/project-title2.jpg" alt="img">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="tile title-1">
-      <div class="one">
-        <div>
-          <a href="#" target="/_blank">
-            <img src="assets/img/project-title1.jpg" alt="img">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="tile web-design">
-      <div class="one">
-        <div>
-          <a href="#" target="/_blank">
-            <img src="assets/img/project-webdesign.jpg" alt="img">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="tile web-development">
-      <div class="one">
-        <div>
-          <a href="#" target="/_blank">
-            <img src="assets/img/project-webdevelopment.jpg" alt="img">
-          </a>
+    <div class="box" *ngFor="let work of works">
+      <div class="tile {{ work.tag }}">
+        <div class="one">
+          <div>
+            <a href="{{ work.link }}" target="/_blank">
+              <img src="{{ work.imgUrl }}" alt="img">
+            </a>
+          </div>
         </div>
       </div>
     </div>
